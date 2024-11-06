@@ -1,0 +1,356 @@
+<!-- **** FIRST RESPONSIVE WEBSITE OF MY LIFE ***** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Meal</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Balthazar&family=Dancing+Script:wght@600&family=Prompt:wght@300&family=Sansita+Swashed:wght@300&family=Square+Peg&family=Titillium+Web:ital@1&family=Ubuntu:ital,wght@0,400;1,300&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300&family=Baloo+Bhai+2:wght@500&family=Balthazar&family=Dancing+Script:wght@600&family=Prompt:wght@300&family=Sansita+Swashed:wght@300&family=Signika+Negative&family=Square+Peg&family=Titillium+Web:ital@1&family=Ubuntu:ital,wght@0,400;1,300&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width :1250px)" href="css/phone.css">
+</head>
+<body>
+            <!-- Navigation bar -->
+    <style>
+        
+        *{
+    margin : 0;
+    padding : 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+#navbar{
+    display : flex;
+    align-items: center;
+     position: sticky;
+    top:0px;
+    
+}
+#navbar::before{
+    content : "";
+    background-color: rgba(0, 0, 0, 0.689);
+    position : absolute;
+    top:0px;
+    left:0px;
+  height:100%;
+   width :100%;
+  
+    opacity : 0.7;
+    z-index:-1;
+  }
+
+
+
+#navbar ul{
+    display : flex;
+    margin: 24px  0px;
+    padding: 4px;
+ }
+
+#navbar ul li{
+    list-style:none;
+  
+}
+#navbar ul li a{
+    text-decoration: none;
+    margin : 2px 2px;
+    padding : 16px;
+    color : white;
+    font-family: 'Balthazar', serif;
+    margin : 2px 2px;
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+       font-size :1.1rem;
+    display:block;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 23px;
+    margin : 2px 2px;
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: 'Balthazar', serif;
+    font-size: 1.1rem;
+}
+#logo img{
+   width : 70px;
+   height :70px;
+   margin : 0px 20px;
+  }
+ /* HOME STYLING */
+ #home::before{
+    content:"";
+    background:url(../img/1.jpg) no-repeat center/cover;
+    position : absolute;
+   display: flex;
+    top:0px;
+    left:0px;
+    height: 640px;
+    width :100%;
+    opacity : 0.7;
+    z-index:-1;
+       }
+ #home{
+    display : flex;
+    flex-direction: column;
+    color:white;
+      justify-content:center;
+    text-align :center;
+    font-size:1.3rem;
+    margin :  30px 40px;
+    margin-bottom: 2px;
+    padding: 44px;
+    padding-bottom:0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    height : 450px;
+    
+ }
+ button{
+   display: block ;
+  margin:auto;
+  width:200px;
+    font-size: 1.2rem;
+         cursor:pointer;
+     border-radius :1rem;
+     background-color: rgba(172, 71, 71, 0.676);
+     font-family: 'Baloo Bhai 2', cursive;
+ }
+ /* Services */
+ #services {
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 70px;
+ }
+ .box img{
+  display: block;
+  margin:auto;
+    height : 160px;
+    width : 200px;
+ }
+ .box{
+    height : 280px;
+    width : 400px;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    border : 2px solid brown;
+    margin : 15px;
+    padding: 18px;
+    border-radius: 1.2rem;
+    text-align:center;
+    justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgb(242, 230, 214);
+ }
+.box img .img1{
+    width :400px;
+ }
+ #services{
+  
+    max-width:100%;
+    max-height:100%;
+    display: flex;
+   
+    justify-content: center;
+    text-align: center;
+ }
+ .h{
+  margin-top : 70px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ /* utility classes */
+ .h-primary{
+   font-size: 2rem; 
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ .center{
+   text-align: center;
+   padding: 20px;
+ }
+ #clt img{
+   height : 150px;
+   width : 150px;
+   margin : 26px;
+   margin-bottom: 0px;
+   padding:10px;
+
+ }
+ .sec{
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   
+ }
+  #clt::before{
+   content:"";
+   background: url(../img/bg,jpg.jpg) no-repeat center/cover;
+   position : absolute;
+  
+  left:0px;
+   max-height: 200px;
+   max-width :100%;
+   opacity : 0.4;
+   z-index:-1;
+   margin:0px;
+ }
+ .contact-box{
+   display : flex;
+   font-size: 1rem;
+   font-family:'Baloo Bhai 2', cursive ;
+    flex-direction: column;
+     
+ }
+ .contactDetails input{
+   text-align:center;
+   
+    margin: 8px ;
+   padding: 6px;
+   width: 550px;
+   border-radius: 1.2rem;
+   display:block;
+   margin:auto;
+ }
+ textarea{
+   display: block;
+   margin: auto;
+ }
+ #contact::before{
+   content: "";
+   background: url(../img/ft1.jpg) no-repeat center center/cover;
+   position: absolute;
+ background-color: rgb(120, 116, 116);
+   left:0px;
+   height:56%;
+   width:100%;
+   opacity :0.4;
+   z-index:-1;
+ }
+ .footer{
+  background-color: black;
+     height: 30px;
+  width:100%;
+ color:white;
+ text-align: center;
+ 
+ }
+ #contact label{
+   display:block;
+   margin:  0px 480px; 
+
+ }
+.footer{
+  display:block;
+  position:relative;
+  bottom:0px;
+  left:0px;
+}
+    </style>         
+
+    <nav id="navbar">
+        <div id="logo">  
+            <img src="img/logo.jpg" alt="Meals">  
+        </div>
+        
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact us</a></li>
+            </ul>
+         </nav>
+
+         <!-- Section Under Navigation bar -->
+    <section id="home">
+    <h1>Welcome to Happy Meals'</h1>
+    <br>
+  <p>The best way to celebrate the holidays is with some delicious food.</p>
+  <p>And here is the best for the best.</p>
+   <button>Order &nbsp;Now!!</button>
+    </section>
+      <!-- h primary and center both are utility classes added as (h1.h-primary.center) -->
+    
+<br>
+    <section id="container">
+    <h1 class="h">Our &nbsp;Services</h1>
+    <div id="services">
+        <div class="box">
+        <img src="img/3.jpg" alt="an image" class="img1">
+        <h2 class="srv">Food Catering</h2>
+        <p>The scope of the experienced caterers continues to rise, not just because of their professionalism, but also due to the ‘word of mouth’. Caterers are known to uplift.</p>
+        </div>
+        <div class="box">
+            <img src="img/4.jpg" alt="an image" class="img2">
+            <h2 class="srv">Bulk Ordering</h2>
+            <p>We offer discounts on bulk orders depending on the product and the total invoice amount. Minimum value to be eligible for discounts is approximately above  Rs 250 </p>
+            
+           
+            </div>
+            <div class="box">
+                <img src="img/6.jpg" alt="an image" class="img3">
+                <h2 class="srv">Food Ordering</h2>
+                <p >Order food online from restaurants and get it delivered. Serving in Bangalore, Hyderabad, Delhi, Gurgaon, Nagpur, Jaipur, Coimbatore, Chandigarh.</p>
+                </div>
+    </div>
+   </section>
+  <br>
+  <br>
+
+   <section id="clients">
+   <h1 class="h-primary center">Our Clients</h1>
+   <div id="clt" class="sec">
+    <img src="img/logo1.jpg" alt="our client">
+    <img src="img/logo2.jpg" alt="our client">
+    <img src="img/logo3].jpg" alt="our client">
+    <img src="img/logo4.jpg" alt="our client">
+    <img src="img/logo5.jpg" alt="our client">
+    <img src="img/logo6.jpg" alt="our client">
+     </div>
+</section>
+
+ 
+
+ <section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="contactDetails">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="contactDetails">
+                <label for="email">Email: </label>
+                <input type="email" name="name" id="email" placeholder="Enter your email">
+            </div>
+            <div class="contactDetails">
+                <label for="phone">Phone Number: </label>
+                <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+            </div>
+            <div class="contactDetails">
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section id="foot">
+    <footer>
+        <div class="footer">
+            Copyright &copy; www.Happy Meal.com All right reserved!
+        </div>
+        </footer>
+</section>
+ </body>
+</html>
